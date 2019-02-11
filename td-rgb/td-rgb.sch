@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:td-rgb-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -20,7 +20,7 @@ U 1 1 5C2009D2
 P 1750 3500
 F 0 "J1" H 1750 4367 50  0000 C CNN
 F 1 "ICD15S13E4GV00LF " H 1750 4276 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 800 3900 50  0001 C CNN
+F 2 "1-1734530-1:TE_1-1734530-1" H 800 3900 50  0001 C CNN
 F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/drawing/c-cd-0012.pdf" H 800 3900 50  0001 C CNN
 	1    1750 3500
 	1    0    0    -1  
@@ -178,7 +178,7 @@ green
 Text Label 1450 3500 2    50   ~ 0
 blue
 Wire Wire Line
-	1450 3900 1250 3900
+	1450 3900 1350 3900
 Wire Wire Line
 	1200 3900 1200 3400
 Wire Wire Line
@@ -445,7 +445,7 @@ F 1 "Conn_01x05_Male" H 6572 3423 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6600 3400 50  0001 C CNN
 F 3 "~" H 6600 3400 50  0001 C CNN
 	1    6600 3400
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x05_Male J2
@@ -620,4 +620,17 @@ Text Label 3700 3500 0    50   ~ 0
 blue_in
 Text Label 3700 3200 0    50   ~ 0
 blank_in
+Wire Wire Line
+	1450 3800 1350 3800
+Wire Wire Line
+	1350 3800 1350 3900
+Connection ~ 1350 3900
+Wire Wire Line
+	1350 3900 1250 3900
+NoConn ~ 1450 3700
+NoConn ~ 1450 3600
+NoConn ~ 2050 3700
+NoConn ~ 2050 3300
+NoConn ~ 2050 3100
+NoConn ~ 2050 3900
 $EndSCHEMATC
