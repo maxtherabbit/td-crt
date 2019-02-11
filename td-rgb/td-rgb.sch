@@ -427,8 +427,6 @@ Wire Wire Line
 Text Label 5400 2200 0    50   ~ 0
 csync_out
 Wire Wire Line
-	3200 3500 3200 1850
-Wire Wire Line
 	3200 1850 4550 1850
 Wire Wire Line
 	4550 1850 4550 2100
@@ -633,4 +631,19 @@ NoConn ~ 2050 3700
 NoConn ~ 2050 3300
 NoConn ~ 2050 3100
 NoConn ~ 2050 3900
+$Comp
+L Device:R R10
+U 1 1 5C611C8F
+P 3200 2650
+F 0 "R10" H 3270 2696 50  0000 L CNN
+F 1 "470" H 3270 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3130 2650 50  0001 C CNN
+F 3 "~" H 3200 2650 50  0001 C CNN
+	1    3200 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2500 3200 1850
+Wire Wire Line
+	3200 2800 3200 3500
 $EndSCHEMATC
